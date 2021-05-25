@@ -23,12 +23,18 @@ export default function Weather() {
     const tomorrowFormated = format(tomorrow, "dd/MM/yy EEEE")
     const afterTomorrowFormated = format(afterTomorrow, "dd/MM/yy EEEE")
 
-    return (
+    if(weather){
+        return (
+            <div>
+            Now {dateFormated}:
+            {weather.temperature} <Image item={weather}/>
+            Tomorrow {tomorrowFormated}: {weather.forecast[0].temperature}
+            Day after tomorrow {afterTomorrowFormated}: {weather.forecast[1].temperature}
+            </div>
+        )
+    }
+    return(
         <div>
-        Now {dateFormated}:
-        {weather.temperature} <Image item={city}/>
-        Tomorrow {tomorrowFormated}: {weather.forecast[0].temperature}
-        Day after tomorrow {afterTomorrowFormated}: {weather.forecast[1].temperature}
 
         </div>
     )
