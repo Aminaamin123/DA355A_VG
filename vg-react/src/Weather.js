@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { format, addDays } from 'date-fns';
+import Image from './Image';
 
 export default function Weather() {
 
@@ -25,7 +26,7 @@ export default function Weather() {
     return (
         <div>
         Now {dateFormated}:
-        {weather.temperature} 
+        {weather.temperature} <Image item={city}/>
         Tomorrow {tomorrowFormated}: {weather.forecast[0].temperature}
         Day after tomorrow {afterTomorrowFormated}: {weather.forecast[1].temperature}
 
