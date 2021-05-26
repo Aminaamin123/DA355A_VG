@@ -3,7 +3,7 @@ import axios from 'axios';
 import { format, addDays } from 'date-fns';
 import Image from './Image';
 
-export default function Weather() {
+export default function Weather(props) {
 
     const url = "https://goweather.herokuapp.com/weather/Curitiba"
     const [weather, setWeather] = useState(null)

@@ -1,9 +1,15 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
+import Weather from './Weather';
 
 export default function Search() {
 
     const inputLocation = useRef();
+    const [location, setLoc] = useState("")
 
+    function setLocation(event){
+        event.preventDefault();
+        setLoc(inputLocation.current.value)
+    }
 
     return (
         <div>
@@ -13,9 +19,10 @@ export default function Search() {
                         <label for="location">Titel:</label>
                         <input className="form-control" type="text" id="location" placeholder="Pick a place..." ref={inputLocation} />
                     </div>
-                    <input type="submit" className="btn btn-success mt-3" value="Search" />
+                    <input type="submit" className="btn btn-success mt-3" value="Search" onClick={setLocation} />
                 </fieldset>
             </form>
+            <Weather item={location}/>
         </div>
     )
 }
