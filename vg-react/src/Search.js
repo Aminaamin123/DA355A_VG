@@ -6,7 +6,7 @@ export default function Search() {
     const inputLocation = useRef();
     const [location, setLoc] = useState(null)
 
-    function setLocation(event){
+    function setLocation(event){ //retrieving and saving the input value
         event.preventDefault();
         setLoc(inputLocation.current.value)
         inputLocation.current.value = "";
