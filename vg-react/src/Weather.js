@@ -28,7 +28,7 @@ export default function Weather(props) {
     const tomorrowFormated = format(tomorrow, "dd/MM/yy EEEE")
     const afterTomorrowFormated = format(afterTomorrow, "dd/MM/yy EEEE")
 
-    if(weather){ //checking if weather is avalibe 
+    if(weather){ //checking if weather is avalibe
         return (
             <div>
             Now {dateFormated}:
