@@ -13,14 +13,14 @@ export default function Search() {
     }
 
     return (
-        <div>
-            <form>
+        <div className="container">
+            <form className="border border-primary p-2 w-50 m-2">
                 <fieldset>
                     <div className="mb-3">
                         <label for="location">Titel:</label>
-                        <input className="form-control" type="text" id="location" placeholder="Pick a place..." ref={inputLocation} />
+                        <input className="form-control border border-primary" type="text" id="location" placeholder="Pick a place..." ref={inputLocation} />
                     </div>
-                    <input type="submit" className="btn btn-success mt-3" value="Search" onClick={setLocation} />
+                    <input type="submit" className="btn btn-primary mt-3" value="Search" onClick={setLocation} />
                 </fieldset>
             </form>
             <Weather item={location}/>
