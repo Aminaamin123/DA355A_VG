@@ -30,11 +30,19 @@ export default function Weather(props) {
 
     if(weather){ //checking if weather is avalibe
         return (
-            <div>
-            Now {dateFormated}:
-            {weather.temperature} <Image item={weather}/>
-            Tomorrow {tomorrowFormated}: {weather.forecast[0].temperature}
-            Day after tomorrow {afterTomorrowFormated}: {weather.forecast[1].temperature}
+            <div className="text-center mx-auto w-75 text-white" >
+                <ul className="list-unstyled">
+                    <li>
+                        Now {dateFormated}:
+                        {weather.temperature} <Image item={weather}/>
+                    </li>
+                    <li>
+                         Tomorrow {tomorrowFormated}: {weather.forecast[0].temperature}
+                    </li>
+                    <li>
+                         Day after tomorrow {afterTomorrowFormated}: {weather.forecast[1].temperature}
+                    </li>
+                </ul>
             </div>
         )
     }
