@@ -4,11 +4,12 @@ import Weather from './Weather';
 export default function Search() {
 
     const inputLocation = useRef();
-    const [location, setLoc] = useState("")
+    const [location, setLoc] = useState(null)
 
     function setLocation(event){
         event.preventDefault();
         setLoc(inputLocation.current.value)
+        inputLocation.current.value = "";
     }
 
     return (

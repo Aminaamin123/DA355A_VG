@@ -4,9 +4,14 @@ import { format, addDays } from 'date-fns';
 import Image from './Image';
 
 export default function Weather(props) {
-
-    const url = "https://goweather.herokuapp.com/weather/Curitiba"
     const [weather, setWeather] = useState(null)
+
+    var url = "https://goweather.herokuapp.com/weather/"
+
+    if(props.item != null){
+        url += props.item
+        console.log(url)
+    }
 
     useEffect(() => {
         axios.get(url).then(response =>{
