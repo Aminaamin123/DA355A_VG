@@ -1,7 +1,8 @@
 import React, { useRef, useState } from 'react'
 import Weather from './Weather';
 
-export default function Search() { //retrieving and saving the input value
+export default function Search() {
+//component for retrieving, saving & sending the input value
 
     const inputLocation = useRef();
     const [location, setLoc] = useState(null)
@@ -18,7 +19,7 @@ export default function Search() { //retrieving and saving the input value
                 <fieldset>
                     <div className="mb-3 text-white">
                         <label for="location">Country / city:</label>
-                        <input className="form-control border border-primary" type="text" id="location" placeholder="Pick a place..." ref={inputLocation} />
+                        <input className="form-control border border-primary w-75 m-auto" type="text" id="location" placeholder="Pick a place..." ref={inputLocation} />
                     </div>
                     <input type="submit" className="btn btn-primary w-75" value="Search" onClick={setLocation} />
                 </fieldset>

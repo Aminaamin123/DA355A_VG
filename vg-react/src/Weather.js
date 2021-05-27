@@ -4,6 +4,7 @@ import { format, addDays } from 'date-fns';
 import Image from './Image';
 
 export default function Weather(props) {
+    //component to retrieve weather prognosis of chosen place & dispaly it
     const [weather, setWeather] = useState(null)
 
     var url = "https://goweather.herokuapp.com/weather/"
@@ -32,9 +33,10 @@ export default function Weather(props) {
         return (
             <div className="text-center mx-auto w-75 text-white" >
                 <ul className="list-unstyled">
-                    <li>
+                    <li className="pb-3">
+                    <Image item={weather}/>
                         Now {dateFormated}:
-                        {weather.temperature} <Image item={weather}/>
+                        {weather.temperature}
                     </li>
                     <li>
                          Tomorrow {tomorrowFormated}: {weather.forecast[0].temperature}
