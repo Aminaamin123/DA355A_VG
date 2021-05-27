@@ -27,5 +27,12 @@ On your terminal, go in to the directory of the cloned folder, than do a `npm in
 ## 3. Build and preview the site locally at http://localhost:3000
 `npm start`   -    `CTRL-C` *(to stop the run)*
 
+## Preview of application
+<img width="507" alt="Skärmavbild 2021-05-27 kl  12 52 55" src="https://user-images.githubusercontent.com/62305546/119814510-c31cc780-beea-11eb-9df4-5a735676d534.png">
+
 ## License
 ### Everything is published under The MIT License.
+
+
+
+
