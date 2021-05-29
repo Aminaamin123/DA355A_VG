@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import Weather from './Weather';
 
-export default function Search() {
+export default function Search() { 
 //component for retrieving, saving & sending the input value
 
     const inputLocation = useRef();
@@ -12,7 +12,7 @@ export default function Search() {
         setLoc(inputLocation.current.value)
         inputLocation.current.value = "";
     }
-
+    
     return (
         <div className="container mx-auto">
             <form className="border border-primary p-2 w-75 m-2 mx-auto" style={{maxWidth: '40rem'}}>
@@ -27,4 +27,5 @@ export default function Search() {
             <Weather item={location}/>
         </div>
     )
+    
 }

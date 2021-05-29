@@ -36,7 +36,7 @@ export default function Weather(props) {
                     <li className="pb-3">
                     <Image item={weather}/>
                         Now {dateFormated}:
-                        {weather.temperature}
+                        {weather.temperature} 
                     </li>
                     <li>
                          Tomorrow {tomorrowFormated}: {weather.forecast[0].temperature}
@@ -54,3 +54,4 @@ export default function Weather(props) {
         </div>
     )
 }
+
