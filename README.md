@@ -3,7 +3,7 @@
 An application to keep track of the weather in different parts of the world within the next few days.
 The application collects infomation from an external [API](https://github.com/robertoduessmann/weather-api) and prints out date along with degrees.
 
-The application is using [react](https://reactjs.org/) framework and external nmp libraries:
+The application is using [react](https://reactjs.org/) framework and external npm libraries:
 * [axios](https://www.npmjs.com/package/axios)
 * [react-ionicons](https://www.npmjs.com/package/react-ionicons)
 * [date-fns](https://www.npmjs.com/package/date-fns)
