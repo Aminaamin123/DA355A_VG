@@ -21,7 +21,7 @@ Clone project at https://github.com/Aminaamin123/DA355A_VG.git
 
 **'Windows'** https://nodejs.org/en/#download
 
-### Install nmp
+### Install npm
 On your terminal, go in to the directory of the cloned folder, than do a `npm install` .
 
 ## 3. Build and preview the site locally at http://localhost:3000
