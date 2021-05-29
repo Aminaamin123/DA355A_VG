@@ -22,7 +22,7 @@ Clone project at https://github.com/Aminaamin123/DA355A_VG.git
 **'Windows'** https://nodejs.org/en/#download
 
 ### Install npm
-On your terminal, go in to the directory of the cloned folder, than do a `npm install` .
+On your terminal, go in to the directory of vg-react folder in the cloned folder, than do a `npm install` .
 
 ## 3. Build and preview the site locally at http://localhost:3000
 `npm start`   -    `CTRL-C` *(to stop the run)*
